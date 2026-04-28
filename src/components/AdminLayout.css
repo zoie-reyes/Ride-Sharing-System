@@ -1,0 +1,28 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.admin-main-content {
+  flex: 1;
+  margin-left: 260px; /* Width of the sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-page-header {
+  background-color: #f6d1c4; /* Peach color from mockup */
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.admin-page-content {
+  padding: 40px;
+  flex: 1;
+  max-width: 1200px;
+}

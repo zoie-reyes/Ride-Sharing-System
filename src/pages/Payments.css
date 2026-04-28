@@ -1,0 +1,272 @@
+.payments-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.payments-header-bar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 16px 24px;
+}
+
+.payments-header-bar h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.payments-content {
+  padding: 32px 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Balance Card */
+.balance-card {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  padding: 32px;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.balance-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.balance-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.currency-symbol {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.currency-code {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
+.add-balance-btn {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color var(--transition-speed);
+}
+
+.add-balance-btn:hover {
+  background-color: #f8fafc;
+}
+
+/* Sections */
+.payments-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.add-method-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Methods List */
+.methods-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.method-card {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: box-shadow var(--transition-speed);
+}
+
+.method-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.method-icon-container {
+  width: 48px;
+  height: 48px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.blue-icon {
+  color: var(--primary-color);
+}
+
+.method-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.method-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.method-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.method-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.default-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background-color: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+.text-muted {
+  color: #9ca3af;
+}
+
+/* Transactions List */
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.transaction-icon-container.ride {
+  background-color: #d1fae5;
+  color: #10b981;
+}
+
+.transaction-icon-container.add {
+  background-color: #e0e7ff;
+  color: var(--primary-color);
+}
+
+.transaction-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.transaction-amount-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.transaction-amount {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.transaction-amount.negative {
+  color: var(--text-dark);
+}
+
+.transaction-amount.positive {
+  color: #10b981; /* Success green */
+}
+
+.transaction-method {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
