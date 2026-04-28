@@ -1,0 +1,20 @@
+.admin-sidebar {
+  background-color: #f8f9fa; /* Consistent with the screenshots */
+}
+
+/* Re-use most styles from Sidebar.css, but ensure active state has the peach/light red background as in the mockup */
+.admin-sidebar .nav-item.active {
+  background-color: #fce8e6; /* light peach/pink */
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.admin-sidebar .profile-link {
+  background-color: #f5e6e6; /* match the peach hue of the footer card */
+}
+
+.admin-sidebar .profile-link:hover {
+  background-color: #f0dcdc;
+}
+
+/* The rest can be inherited or if Sidebar.css is global, we just override */

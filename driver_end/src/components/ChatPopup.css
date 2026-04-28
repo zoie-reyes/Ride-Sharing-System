@@ -1,0 +1,122 @@
+.chat-popup {
+  position: absolute;
+  bottom: 100px;
+  right: 32px;
+  width: 350px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+  border: 1px solid var(--border-color);
+}
+
+.chat-header {
+  background-color: var(--bg-topbar);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.chat-header-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #64748b;
+}
+
+.chat-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.chat-role {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+.chat-close {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-body {
+  padding: 24px 16px;
+  background-color: #f8fafc;
+  height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message.received {
+  align-self: flex-start;
+  max-width: 85%;
+}
+
+.chat-bubble {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  padding: 12px 16px;
+  border-radius: 12px 12px 12px 0;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.chat-time {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.chat-footer {
+  padding: 16px;
+  border-top: 1px solid var(--border-color);
+  background-color: white;
+}
+
+.chat-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chat-input {
+  flex: 1;
+  background-color: #f1f5f9;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.chat-send {
+  background-color: #475569;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
